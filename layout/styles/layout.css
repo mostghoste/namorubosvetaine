@@ -396,8 +396,37 @@ input:focus, textarea:focus, *:required:focus{border-color:#7FA3A1 !important;}
 
 
 /* Copyright */
-#copyright{border-color:rgba(255,255,255,.2);}
+#copyright{
+	background-color:rgba(255,255,255,.2);
+	aspect-ratio: 1 / 1;
+}
 
+
+/*Zemelapis*/
+
+.contentMap {
+	display: flex;
+	justify-content: center;
+}
+
+#map {
+	background-color: #7FA3A1;
+	width: 80%;
+	max-width: 50rem;
+	aspect-ratio: 1;
+}
+
+#shapes > path {
+	fill-opacity: 1;
+}
+
+#shapes > .taken:hover {
+	fill: red;
+}
+
+#shapes > .available:hover {
+	fill: green;
+}
 
 /* Navigation */
 #mainav {
